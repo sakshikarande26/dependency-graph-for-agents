@@ -1,0 +1,101 @@
+{
+  "slug": "GITHUB_CREATE_AN_ISSUE_COMMENT",
+  "name": "Create an issue comment",
+  "description": "Creates a new comment on an existing GitHub issue or pull request within the specified repository.",
+  "inputParameters": {
+    "type": "object",
+    "properties": {
+      "body": {
+        "type": "string",
+        "description": "Comment content in GitHub Flavored Markdown.",
+        "title": "Body",
+        "examples": [
+          "This is a **bold** comment!",
+          "Thanks for the update :+1:",
+          "Fixes #123"
+        ]
+      },
+      "repo": {
+        "type": "string",
+        "description": "Name of the repository (without `.git` extension); not case-sensitive.",
+        "title": "Repo",
+        "examples": [
+          "Spoon-Knife",
+          "my-awesome-project"
+        ]
+      },
+      "owner": {
+        "type": "string",
+        "description": "Account owner of the repository (username or organization); not case-sensitive.",
+        "title": "Owner",
+        "examples": [
+          "octocat",
+          "my-organization"
+        ]
+      },
+      "issue_number": {
+        "type": "integer",
+        "description": "Number identifying the issue or pull request for the comment.",
+        "title": "Issue Number",
+        "examples": [
+          42,
+          101
+        ]
+      }
+    },
+    "required": [
+      "owner",
+      "repo",
+      "issue_number",
+      "body"
+    ],
+    "title": "CreateAnIssueCommentRequest",
+    "description": "Parameters to create a comment on a GitHub issue or pull request."
+  },
+  "outputParameters": {
+    "type": "object",
+    "properties": {
+      "data": {
+        "description": "Data from the action execution",
+        "title": "Data",
+        "$ref": "#/$defs/CreateAnIssueCommentResponse"
+      },
+      "error": {
+        "type": "string",
+        "description": "Error if any occurred during the execution of the action",
+        "title": "Error"
+      },
+      "successful": {
+        "type": "boolean",
+        "description": "Whether or not the action execution was successful or not",
+        "title": "Successful"
+      }
+    },
+    "required": [
+      "data",
+      "successful"
+    ],
+    "title": "CreateAnIssueCommentResponseWrapper"
+  },
+  "tags": [
+    "important",
+    "openWorldHint",
+    "Comments",
+    "createHint"
+  ],
+  "toolkit": {
+    "slug": "github",
+    "name": "github",
+    "logo": "https://logos.composio.dev/api/github"
+  },
+  "version": "20260501_01",
+  "isDeprecated": false,
+  "availableVersions": [
+    "20260501_01"
+  ],
+  "scopes": [
+    "repo",
+    "public_repo"
+  ],
+  "isNoAuth": false
+}

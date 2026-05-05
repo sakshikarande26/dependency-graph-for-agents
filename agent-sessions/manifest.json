@@ -1,0 +1,58 @@
+{
+  "mode": "collected",
+  "generatedAt": "2026-05-05T06:26:52.432Z",
+  "projectRoot": "/Users/sakshikarande/Downloads/dep-graph",
+  "outputDir": "/Users/sakshikarande/Downloads/dep-graph/agent-sessions",
+  "windowMinutes": 90,
+  "cutoffTime": "2026-05-05T04:56:52.281Z",
+  "providers": {
+    "codex": {
+      "found": 0,
+      "copied": 0,
+      "skippedReason": "Missing path: /Users/sakshikarande/.codex/sessions",
+      "artifacts": []
+    },
+    "claude": {
+      "found": 1,
+      "copied": 1,
+      "skippedReason": null,
+      "artifacts": [
+        {
+          "provider": "claude",
+          "sourcePath": "/Users/sakshikarande/.claude/projects/-Users-sakshikarande-Downloads-dep-graph/5e0f2dcf-3f34-4165-8537-bb8563bb7d24.jsonl",
+          "copiedPath": "claude/-Users-sakshikarande-Downloads-dep-graph/5e0f2dcf-3f34-4165-8537-bb8563bb7d24.jsonl",
+          "timestampUsed": "2026-05-05T06:18:09.129Z",
+          "type": "session_jsonl",
+          "metadata": {
+            "cwd": "/Users/sakshikarande/Downloads/dep-graph"
+          }
+        }
+      ]
+    },
+    "opencode": {
+      "found": 0,
+      "copied": 0,
+      "skippedReason": "Missing path: /Users/sakshikarande/Library/Application Support/opencode/opencode.db",
+      "artifacts": []
+    },
+    "cursor": {
+      "found": 0,
+      "copied": 0,
+      "skippedReason": "No recent Cursor workspaces matched this project",
+      "artifacts": []
+    }
+  },
+  "artifacts": [
+    {
+      "provider": "claude",
+      "sourcePath": "/Users/sakshikarande/.claude/projects/-Users-sakshikarande-Downloads-dep-graph/5e0f2dcf-3f34-4165-8537-bb8563bb7d24.jsonl",
+      "copiedPath": "claude/-Users-sakshikarande-Downloads-dep-graph/5e0f2dcf-3f34-4165-8537-bb8563bb7d24.jsonl",
+      "timestampUsed": "2026-05-05T06:18:09.129Z",
+      "type": "session_jsonl",
+      "metadata": {
+        "cwd": "/Users/sakshikarande/Downloads/dep-graph"
+      }
+    }
+  ],
+  "totalArtifacts": 1
+}
